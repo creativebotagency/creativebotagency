@@ -1,0 +1,17 @@
+<section class="theme-grey">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">What we can do for you</h2>
+      <p class="section-strapline">
+        See what we can do to turn your idea into something special.
+      </p>
+    </div>
+    <div class="services-wrapper">
+      <div class="row">
+        <div class="col-sm-4" *ngFor="let service of services">
+          <app-card [title]="service.name" [description]="service.description" [icon]="service.icon"></app-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

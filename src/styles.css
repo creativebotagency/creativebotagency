@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --light-grey: #f2f2f2;
+  --body-color: #333333;
+  --dark-black: #111111;
+  --grey: #6b6b6b;
+  --background-black: #181818;
+  --app-blue: #2892D7;
+}
+
+.theme-grey {
+  background-color: var(--light-grey);
+  color: var(--dark-black);
+}
+
+.theme-dark {
+  background-color: var(--background-black);
+  color: #ffffff;
+}
+
+.p-t-60 {
+  padding-top: 60px;
+}
+
+.p-b-60 {
+  padding-bottom: 60px;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.section-strapline {
+  font-size: 24px;
+  color: var(--grey);
+}

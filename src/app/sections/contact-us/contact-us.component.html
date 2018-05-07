@@ -1,0 +1,23 @@
+<section class="theme-dark">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-strapline">
+        Now that you know a little about us, let's grab a coffee!
+      </p>
+    </div>
+    <div class="form-wrapper">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <form [formGroup]="formGroup">
+            <input type="text" placeholder="Name" formControlName="name">
+            <input type="text" placeholder="Email" formControlName="email">
+            <input type="text" placeholder="Subject" formControlName="subject">
+            <textarea type="text" placeholder="Tell us about your project or company" rows="6" formControlName="question"></textarea>
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
