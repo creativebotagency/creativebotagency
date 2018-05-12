@@ -2,19 +2,41 @@ section {
   min-height: 95vh;
 }
 
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .carousel-cell {
   width: 100%;
-  height: 90%;
+  height: 90vh;
+  .container,
+  .row {
+    height: 100%
+  }
   .project-wrapper {
     width: 100%;
     height: 100%;
-    img {
+    .project-info {
       width: 100%;
+      height: 100%;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .project-title {
+        font-size: 32px;
+        font-weight: 600;
+      }
+    }
+    .project-image {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
     }
   }
 }

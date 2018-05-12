@@ -1,5 +1,5 @@
-<section class="theme-grey">
-  <div class="container">
+<section class="theme-dark">
+  <div class="container p-t-60">
     <div class="text-center">
       <h2 class="section-title">What we can do for you</h2>
       <p class="section-strapline">
@@ -9,7 +9,7 @@
     <div class="services-wrapper">
       <div class="row">
         <div class="col-sm-4" *ngFor="let service of services">
-          <app-card [title]="service.name" [description]="service.description" [icon]="service.icon"></app-card>
+          <app-card class="dark" [title]="service.name" [description]="service.description" [icon]="service.icon"></app-card>
         </div>
       </div>
     </div>

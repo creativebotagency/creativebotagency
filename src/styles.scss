@@ -7,6 +7,13 @@
   --grey: #6b6b6b;
   --background-black: #181818;
   --app-blue: #2892D7;
+  --bright-blue: #56B0CD;
+  /**
+  Blues: 3D9EF7, #2FBFEE, #6CD1F6, 6DBEE4, #2BAFE9, #68B9C7, 89D7EC, 56B0CD, #2AA8E4, #33AAD9
+  */
+  /* 
+  Greys: #5F739B, #A8B3CF, #706E7B
+  */
 }
 
 .theme-grey {
@@ -23,10 +30,16 @@
   padding-top: 60px;
 }
 
+.p-t-120 {
+  padding-top: 120px;
+}
+
 .p-b-60 {
   padding-bottom: 60px;
 }
-
+.p-b-120 {
+  padding-bottom: 120px;
+}
 section {
   padding-top: 120px;
   padding-bottom: 60px;

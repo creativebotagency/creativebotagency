@@ -1,7 +1,23 @@
 .card {
-  padding: 32px 16px;
+  padding: 32px;
   height: 100%;
+  background-color: unset;
   .card-icon {
+    padding-bottom: 32px;
+  }
+  .title {
     padding-bottom: 8px;
+  }
+}
+
+:host.dark {
+  .card {
+    border-color: rgba($color: #fff, $alpha: 0.33333);
+    &:hover {
+      border-color: var(--bright-blue);
+      .card-icon {
+        color: var(--bright-blue);
+      }
+    }
   }
 }
