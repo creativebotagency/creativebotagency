@@ -4,7 +4,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
-  styleUrls: ['./contact-us.component.css']
+  styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent implements OnInit {
 
@@ -13,6 +13,7 @@ export class ContactUsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.createForm();
   }
 
   createForm() {

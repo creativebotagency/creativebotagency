@@ -12,6 +12,7 @@ import { ServicesComponent } from './sections/services/services.component';
 import { CardComponent } from './components/card/card.component';
 import { ContactUsComponent } from './sections/contact-us/contact-us.component';
 import { OurWorkComponent } from './sections/our-work/our-work.component';
+import { FooterComponent } from './sections/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OurWorkComponent } from './sections/our-work/our-work.component';
     ServicesComponent,
     CardComponent,
     ContactUsComponent,
-    OurWorkComponent
+    OurWorkComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,25 @@
 <section class="theme-grey">
-    <div class="container">
-        <div class="text-center">
-          <h2 class="section-title">Our Work</h2>
-          <p class="section-strapline">
-            Check out some of our latest projects.
-          </p>
+  <div class="container-fluid">
+    <div class="text-center">
+      <h2 class="section-title">Our Work</h2>
+      <p class="section-strapline">
+        Check out some of our latest projects.
+      </p>
+    </div>
+    <div class="carousel p-t-60">
+      <div class="carousel-cell" *ngFor="let project of projects">
+        <div class="project-wrapper">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <h4 class="project-title">{{ project.name }}</h4>
+              <p class="project-description">{{ project.description }}</p>
+            </div>
+            <div class="col-xs-12 col-md-8">
+              <img [src]="project.imageUrl" alt="">
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
 </section>
