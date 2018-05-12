@@ -2,6 +2,7 @@
   padding: 32px;
   height: 100%;
   background-color: unset;
+  border-radius: 0;
   .card-icon {
     padding-bottom: 32px;
     .icon {
@@ -18,22 +19,41 @@
   }
 }
 
-:host.dark {
-  .card {
-    border-color: rgba($color: #fff, $alpha: 0.33333);
-    &:hover {
-      border-color: var(--bright-blue);
-      -webkit-box-shadow: 0px 0px 20px 1px rgba(86, 176, 205, 0.33);
-      -moz-box-shadow: 0px 0px 20px 1px rgba(86, 176, 205, 0.33);
-      box-shadow: 0px 0px 20px 1px rgba(86, 176, 205, 0.33);
+:host {
+  &.no-border {
+    .card {
+      border-color: transparent;
     }
   }
-  &.white-shadow {
+  &.shadow {
+    .card:hover {
+      -webkit-box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.13);
+      -moz-box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.13);
+      box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.13);
+    }
+  }
+  &.light {
     .card {
+      background-color: #fff;
+    }
+  }
+  &.dark {
+    .card {
+      border-color: rgba($color: #fff, $alpha: 0.33333);
       &:hover {
-        -webkit-box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.1);
-        -moz-box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.1);
-        box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.1);
+        border-color: var(--bright-blue);
+        -webkit-box-shadow: 0px 30px 80px 0px rgba(86, 176, 205, 0.33);
+        -moz-box-shadow: 0px 30px 80px 0px rgba(86, 176, 205, 0.33);
+        box-shadow: 0px 30px 80px 0px rgba(86, 176, 205, 0.33);
+      }
+    }
+    &.white-shadow {
+      .card {
+        &:hover {
+          -webkit-box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.1);
+          -moz-box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.1);
+        }
       }
     }
   }
