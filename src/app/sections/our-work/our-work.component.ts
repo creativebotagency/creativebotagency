@@ -17,6 +17,7 @@ export class OurWorkComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit() {
+    this.setWorkArray();
   }
 
   ngAfterViewInit() {
@@ -24,17 +25,24 @@ export class OurWorkComponent implements OnInit, AfterViewInit {
   }
 
   initialiseCarousel() {
-    this.setWorkArray();
-    this.carousel = new Flickity('.carousel', {});
+    this.carousel = new Flickity('.carousel', {
+      autoPlay: true
+    });
   }
 
   setWorkArray() {
-    const projects: Work[] = [];
-    projects.push(new Work(
-      'Beast Mode',
-      'A great site',
-      'http://beastmodeacademy.co.uk/wp-content/themes/beastmode_theme/img/STORM%20BANNER%20web%201.jpg'
-    ));
+    const projects: Work[] = [
+      new Work(
+         'Beast Mode',
+         'A great site',
+         'http://beastmodeacademy.co.uk/wp-content/themes/beastmode_theme/img/STORM%20BANNER%20web%201.jpg'
+       ),
+       new Work(
+         'Takamo Auto Clinic',
+         'A garage with a digital edge',
+         'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/IMac_vector.svg/1449px-IMac_vector.svg.png'
+       )
+    ];
     this.projects = projects;
   }
 

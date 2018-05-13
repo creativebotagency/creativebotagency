@@ -2,62 +2,43 @@ section {
   min-height: 95vh;
 }
 
-.carousel-cell {
-  width: 100%;
-  height: 90vh;
-  .container,
-  .row {
-    height: 100%
-  }
-  .project-wrapper {
+.carousel {
+  .carousel-cell {
     width: 100%;
-    height: 100%;
-    .project-info {
+    height: 90vh;
+    .container,
+    .row {
+      height: 100%
+    }
+    .project-wrapper {
       width: 100%;
       height: 100%;
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      .project-title {
-        font-size: 32px;
-        font-weight: 600;
-      }
-    }
-    .project-image {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-      img {
+      .project-info {
         width: 100%;
+        height: 100%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .project-title {
+          font-size: 32px;
+          font-weight: 600;
+        }
+      }
+      .project-image {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        img {
+          width: 100%;
+        }
       }
     }
   }
-}
-
-/* hide disabled button */
-
-.flickity-button:disabled {
-  display: none;
-}
-
-/* position dots up a bit */
-
-.flickity-page-dots {
-  bottom: -22px;
-}
-
-/* dots are lines */
-
-.flickity-page-dots .dot {
-  height: 4px;
-  width: 40px;
-  margin: 0;
-  border-radius: 0;
 }

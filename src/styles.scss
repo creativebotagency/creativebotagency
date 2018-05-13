@@ -35,9 +35,11 @@
 .p-b-60 {
   padding-bottom: 60px;
 }
+
 .p-b-120 {
   padding-bottom: 120px;
 }
+
 section {
   padding-top: 120px;
   padding-bottom: 60px;
@@ -52,4 +54,35 @@ section {
 .section-strapline {
   font-size: 24px;
   color: var(--grey);
+}
+
+.carousel {
+  .flickity-prev-next-button {
+    display: none;
+  }
+  &:hover {
+    .flickity-button,
+    .flickity-prev-next-button,
+    .flickity-prev-next-button.next,
+    .flickity-prev-next-button.previous {
+      display: block;
+      background-color: rgba(214, 214, 214, 0.3);
+      color: #888;
+      &:hover {
+        background-color: rgba(214, 214, 214, 0.66);
+      }
+      &:disabled {
+        display: none;
+      }
+    }
+  }
+  .flickity-page-dots {
+    bottom: -8px;
+    .dot {
+      height: 2px;
+      width: 40px;
+      margin-right: 4px;
+      border-radius: 0;
+    }
+  }
 }
